@@ -1,0 +1,147 @@
+<DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Tool Shed</title>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/javascripts/my.js"></script>
+        <link rel="stylesheet" href="/stylesheets/Themeroller.css">
+        <link rel="stylesheet" href="/stylesheets/Themeroller.min.css">
+        <link rel="stylesheet" href="/stylesheets/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.js"></script>
+    </head>
+
+
+
+
+    <body>
+
+        <div data-role="page" id="home" data-theme="c">
+
+            <div data-theme="a" data-role="header">
+                <h3>The Tool Shed</h3>
+                <h4 >Home Page</h4>
+            </div>
+
+            <div data-role="content" data-theme="c">
+
+                <div>
+                    <ul data-role="listview" data-autodividers="true" data-theme="c" id="tools"></ul>
+                </div>
+
+                <br />
+                <a href="#addpage" class="ui-btn" data-transition="flip">Go to Add Page</a>
+                <br />
+                <h5>To delete a tool, copy the name, then paste after clicking next link.</h5>
+                <a href="#deletepage" class="ui-btn" data-transition="flip">Go to Delete Page</a>
+                
+            </div>
+
+            <div data-role="footer" data-theme="c">
+                <h1>copyright 2019</h1>
+            </div>
+
+        </div>
+
+
+
+        <div data-role="page" id="details-page" data-theme="c">
+            <div data-theme="a" data-role="header">
+                <h3>The Tool Shed</h3>
+                <h4>Details Page</h4>
+                <a href="#home" class="ui-btn-left">Back</a>
+            </div>
+
+            <div data-role="content" data-theme="c">
+
+                <p id="detailParmHere" hidden>change1</p>
+                <p id="showdata">change2</p>
+            </div>
+
+            <a href="#updatepage" class="ui-btn" data-transition="flip">Update this tool</a>
+
+            <div data-role="footer" data-theme="c">
+                <h1>copyright 2019</h1>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+        <div data-role="page" id="addpage" data-theme="c">
+            <div data-role="header" data-theme="c">
+                <h3>The Tool Shed</h3>
+                <h4>Add Tool</h4>
+            </div>
+
+            <div data-role="main" class="ui-content" data-theme="c">
+                <div>
+                    <h2>Add a new Tool</h2>
+                    Name: <input type="text" id="newName" size="25" /> <br />
+                    Category: <input type="text" id="newCategory" size="60" /> <br />
+                    Description: <input type="text" id="newDescription" size="5" /> <br />
+                    <input type="button" value="Add New" onclick="addTool();" />
+                </div>
+
+
+                <a href="#home" class="ui-btn" data-transition="flip" data-rel="back">Go Back</a>
+
+            </div>
+
+            <div data-role="footer" data-theme="c">
+                <h1>copyright 2019</h1>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="deletepage" data-theme="d">
+            <div data-role="header" data-theme="c">
+                <h3>The Tool Shed</h3>
+                <h4>Delete Tool</h4>
+            </div>
+
+            <div data-role="main" class="ui-content" data-theme="c">
+                <div>
+                    <h2>Delete a Tool by Name</h2>
+                    <input type="text" id="deleteToolName" size="25" />
+                    <input type="button" value="Delete" onclick="deleteTool();" />
+                </div>
+
+                <a href="#home" class="ui-btn" data-transition="flip" data-rel="back">Go Back</a>
+
+            </div>
+
+            <div data-role="footer" data-theme="c">
+                <h1>copyright 2019</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="updatepage" data-theme="d">
+            <div data-role="header" data-theme="c">
+                <h3>The Tool Shed</h3>
+                <h4>Update Tool</h4>
+            </div>
+
+            <div data-role="main" class="ui-content" data-theme="c">
+                <div>
+                    <h2>Update Tool</h2>
+                    Name: <input type="text" id="updateName" size="25" /> <br />
+                    Category: <input type="text" id="updateCategory" size="60" /> <br />
+                    Description: <input type="text" id="updateDescription" size="5" /> <br />
+                    <input type="button" value="Update" onclick="updateTool();" />
+                </div>
+                <div data-role="footer" data-theme="c">
+
+
+                <a href="#home" class="ui-btn" data-transition="flip" data-rel="back">Go Back</a>
+
+        </div>
+
+    </body>
+
+    </html>
