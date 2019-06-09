@@ -34,18 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', users);
 
 // new code from example
-const http = require('http');
 const port = process.env.PORT || 3000;
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end('<h1>Hello World</h1>');
-});
-server.listen(port,() => {
-console.log(`Server running at port `+port);
-});
-
 MongoClient.connect(mongoUrl, option, (err, database) => {
     if (err) return console.log(err)
     let db = database.db("Prog219mongoDB")
