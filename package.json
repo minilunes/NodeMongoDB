@@ -1,21 +1,12 @@
 {
   "name": "node_test",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-            "url": ""
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": ""
+  "homepage": "https://github.com/minilunes/MNodeMongoDB#readme"
   "dependencies": {
     "express": "^4.16.4",
     "body-parser": "~1.18.3",
@@ -26,4 +17,11 @@
     "jade": "~1.6.0",
     "mongodb": "^3.1.13"
   }
+  "repository": {
+    "type": "git",
+            "url": "git+https://github.com/minilunes/NodeMongoDB.git"
+  },
+  "author": "Wesley Luna",
+  "license": "ISC",
+  },
 }
