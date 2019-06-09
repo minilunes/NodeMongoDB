@@ -45,6 +45,6 @@ MongoClient.connect(mongoUrl, option, (err, database) => {
         console.log('Web server is live on ' + port);
     });
 
-})
+});
 
 
