@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js"
   },
-  "homepage": "https://github.com/minilunes/MNodeMongoDB#readme"
+  "homepage": "https://github.com/minilunes/NodeMongoDB#readme",
   "dependencies": {
     "express": "^4.16.4",
     "body-parser": "~1.18.3",
@@ -22,6 +22,5 @@
             "url": "git+https://github.com/minilunes/NodeMongoDB.git"
   },
   "author": "Wesley Luna",
-  "license": "ISC",
   },
 }
